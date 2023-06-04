@@ -194,6 +194,12 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+.q {
+  margin-bottom: 25px;
+}
+.a {
+  margin-top: -10px;
+}
 .contact {
   display: flex;
   flex-direction: column;
@@ -397,13 +403,23 @@ section {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 30%;
+    font-size: 50%;
   }
   .logo {
     width: 100px;
   }
   .FormBody {
     width: 100%;
+  }
+  .text {
+    text-align: center;
+    bottom: 10%;
+    color: white;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
   }
   .Check {
     text-align: center;
@@ -424,6 +440,53 @@ section {
   }
   .mainArea {
     width: auto;
+  }
+  .SpecializedInfo {
+    width: 25%;
+    /* background-color: #efcc32; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    gap: 10px;
+  }
+  .a {
+    margin-top: -10px;
+  }
+  .QuickLinks {
+    /* background-color: #f5f7f9; */
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    /* height: 180px; */
+    align-items: center;
+    justify-content: space-around;
+  }
+  .q {
+    margin-bottom: 15px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 20%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer {
+    display: flex;
+    margin-bottom: auto;
+    /* background-color: #fd0909; */
+    height: 250px;
+    padding-top: 30px;
+    flex-direction: column;
+    /* align-items: center;s */
   }
   .footerBar {
     padding: 0 10px;
