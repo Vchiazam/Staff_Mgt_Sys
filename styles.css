@@ -158,9 +158,9 @@ body {
 }
 .footer {
   display: flex;
-  background-color: #ffff;
-  height: 75vh;
-  padding-top: 70px;
+  background-color: #ffffff;
+  height: 60vh;
+  padding-top: 50px;
   flex-direction: column;
   /* align-items: center;s */
 }
@@ -397,7 +397,7 @@ section {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 30%;
   }
   .logo {
     width: 100px;
