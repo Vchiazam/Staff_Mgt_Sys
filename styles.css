@@ -1,0 +1,431 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 0, 0);
+}
+.navBar {
+  z-index: 1;
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.navBarItems {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.About_Check {
+  /* width: 30%; */
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+.Admin_btn {
+  text-align: center;
+  border: 1px solid #d32d44;
+  border-radius: 7px;
+  line-height: 2em;
+  width: 15%;
+  cursor: pointer;
+}
+.mainArea {
+  background: url("https://res.cloudinary.com/dgj2rhqd0/image/upload/v1685151830/SchMgt/eeddd1_p6ipnl.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: rgb(255, 255, 255); */
+  gap: 20px;
+  /* color: white; */
+}
+
+/* .mainArea .backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); Adjust the opacity as needed */
+/* } */
+/* .mainArea .backgroundImage {
+  background: url("https://res.cloudinary.com/dgj2rhqd0/image/upload/v1685142627/SchMgt/download_1_wvaq56.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+} */
+.mainArea img {
+  opacity: 0.5;
+  width: 99.99%;
+  object-fit: contain;
+}
+.Check {
+  color: #efcc32;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+}
+.text {
+  text-align: center;
+  bottom: 10%;
+  color: white;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+.ResultBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border-radius: 7px;
+  gap: 8px;
+  width: 300px;
+  height: 50px;
+  color: white;
+  background-color: #d32d44;
+  cursor: pointer;
+}
+.resultsOverview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #efcc32;
+  height: 50vh;
+}
+.leading {
+  color: #d32d44;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+.Our {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+}
+.Growth {
+  color: #f38530;
+}
+.NumberCount {
+  display: flex;
+  flex-direction: column;
+}
+.Num {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* background-color: #d32d44; */
+  font-size: larger;
+  gap: 50px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 42px;
+  /* line-height: 90px; */
+}
+.Numtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer {
+  display: flex;
+  background-color: #ffff;
+  height: 75vh;
+  padding-top: 70px;
+  flex-direction: column;
+  /* align-items: center;s */
+}
+.footerBar {
+  padding: 0 90px;
+  /* margin-top: -20%; */
+  display: flex;
+  /* background-color: #2dd35f; */
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  align-items: flex-start;
+  padding-bottom: 50px;
+}
+.SpecializedInfo {
+  width: 25%;
+  /* background-color: #efcc32; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify;
+  gap: 41px;
+}
+
+.QuickLinks {
+  /* background-color: #f5f7f9; */
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  /* height: 180px; */
+  align-items: center;
+  justify-content: space-around;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width: 20%;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+}
+.contact div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+hr {
+  padding: 0 90px;
+  width: 87%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(243, 133, 48, 0.5);
+  border-radius: 1px;
+  height: 2px;
+  border: none;
+}
+.Social {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding-top: 20px;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  /* background-color: #d32d44; */
+
+  gap: 24px;
+}
+.Face {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  /* background-color: #3b5998; */
+}
+.socialBody {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.Twitter {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  /* background-color: #1da1f2; */
+}
+.Ig {
+  /* display: flex; */
+  width: 30px;
+  height: 30px;
+}
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+section {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(7px);
+}
+.FormWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(0, 255, 42); */
+  width: 100%;
+  height: 100%;
+}
+.FormBody {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 18px;
+  position: absolute;
+  width: 35em;
+  height: 429px;
+}
+.admin {
+  /* margin-right: 65%; */
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+}
+.details {
+  margin-top: -15px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #a8a8a8;
+  /* margin-right: 60%; */
+
+  margin-bottom: 30px;
+}
+.Username {
+  padding: 20px;
+  width: 100%;
+  height: 54px;
+  left: 0px;
+  top: 0px;
+  background: #f5f7f9;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.password {
+  padding: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 54px;
+  left: 0px;
+  top: 0px;
+  background: #f5f7f9;
+  border-radius: 5px;
+}
+.show_hide {
+  display: none;
+  width: 25px;
+  position: absolute;
+  left: 90%;
+  top: 66%;
+}
+.show_hide1 {
+  width: 25px;
+  position: absolute;
+  left: 90%;
+  top: 66%;
+}
+.BtnWrpper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  /* background-color: #d32d44; */
+}
+.LoginBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 440px;
+  height: 50px;
+  /* Accent Color */
+  color: #ffffff;
+  background: #d32d44;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+.LoginBtn:hover {
+  transform: scaleX(1.01);
+}
+.Error {
+  /* text-align: center; */
+  font-family: "Sora";
+  display: none;
+  color: #ffffff;
+  background-color: rgb(182, 16, 16);
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 70%;
+  height: 7%;
+  transition: all 0.5s linear;
+  border-radius: 3px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .logo {
+    width: 100px;
+  }
+  .FormBody {
+    width: 100%;
+  }
+  .Check {
+    text-align: center;
+    color: #efcc32;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .Admin_btn {
+    text-align: center;
+    border: 1px solid #d32d44;
+    border-radius: 7px;
+    line-height: 2em;
+    width: 18%;
+    cursor: pointer;
+  }
+  .mainArea {
+    width: auto;
+  }
+  .footerBar {
+    padding: 0 10px;
+  }
+}
