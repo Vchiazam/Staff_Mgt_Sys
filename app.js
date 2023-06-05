@@ -8,6 +8,18 @@ let hideP = document.querySelector(".show_hide1");
 let Admin = document.querySelector("section");
 let AdminBtn = document.querySelector(".Admin_btn");
 let popAdmin = false;
+window.addEventListener("resize", function () {
+  var img = document.getElementById("myImage");
+  var breakpoint = 768; // Define your desired breakpoint here
+
+  if (window.innerWidth < breakpoint) {
+    img.src =
+      "https://res.cloudinary.com/dgj2rhqd0/image/upload/v1685875932/ph222222222222-1_qyz8kt.jpg"; // Change the URL for mobile
+  } else {
+    img.src =
+      "https://res.cloudinary.com/dgj2rhqd0/image/upload/v1685871775/ph00000000000000-1_p4iucz.jpg"; // Change the URL for desktop
+  }
+});
 AdminBtn.addEventListener("click", () => {
   if (popAdmin === false) {
     popAdmin = true;
