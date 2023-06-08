@@ -8,6 +8,7 @@ let hideP = document.querySelector(".show_hide1");
 let Admin = document.querySelector("section");
 let AdminBtn = document.querySelector(".Admin_btn");
 let popAdmin = false;
+
 window.addEventListener("resize", function () {
   var img = document.getElementById("myImage");
   var breakpoint = 768; // Define your desired breakpoint here
@@ -125,5 +126,7 @@ function login() {
   //       // else
   //       //     window.location = 'http://127.0.0.1:5503/login.html'
   //     })
+  document.body.style.overflowY = "hidden";
+
   //     .catch((err) => console.error(err));
 }

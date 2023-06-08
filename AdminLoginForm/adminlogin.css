@@ -5,7 +5,7 @@
 }
 body {
   height: 100%;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
@@ -33,6 +33,41 @@ body {
   display: flex;
   justify-content: space-evenly;
   gap: 25px;
+}
+.Check {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  /* line-height: 16px;  */
+  color: #d32d44;
+  display: flex;
+  line-height: 35px;
+  width: 120px;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #ffdbe6;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.About {
+  display: flex;
+  font-family: "Mulish";
+  font-style: normal;
+  /* line-height: 29px; */
+  width: 120px;
+  font-weight: 400;
+  font-size: 12px;
+  justify-content: center;
+  border-radius: 4px;
+  line-height: 35px;
+  cursor: pointer;
+}
+.About:hover {
+  background-color: #fff4f7;
 }
 .Admin_btn {
   text-align: center;
@@ -94,6 +129,21 @@ body {
 
   margin-bottom: 30px;
 }
+.password-container {
+  position: relative;
+}
+.show-hide-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 410px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  height: fit-content;
+}
+
 .Username {
   padding: 20px;
   width: 100%;
@@ -119,24 +169,10 @@ body {
 .show_hide {
   display: none;
   width: 25px;
-  position: absolute;
-  left: 42%;
-  top: 64%;
   transform: translateX(-50%);
-  /* left: 42%; */
-  /* top: 56%; */
-  /* margin-top: 20%; */
 }
 .show_hide1 {
-  align-items: center;
-  justify-content: center;
   width: 25px;
-  /* background-color: #d32d44; */
-  display: flex;
-  align-self: center;
-  position: absolute;
-  left: 42%;
-  top: 64%;
   transform: translateX(-50%);
   /* left: 42%; */
 }
@@ -190,8 +226,302 @@ body {
   transition: all 0.5s linear;
   border-radius: 3px;
 }
+.footer {
+  display: flex;
+  background-color: #fff4f5;
+  height: 60vh;
+  padding-top: 10px;
+  flex-direction: column;
+  /* align-items: center;s */
+}
+.footerBar {
+  padding: 60px 90px;
+  /* margin-top: -20%; */
+  display: flex;
+  /* background-color: #2dd35f; */
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  align-items: flex-start;
+  padding-bottom: 0px;
+}
+.SpecializedInfo {
+  width: 400px;
+  height: 208px;
+  /* background-color: #efcc32; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 40px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+
+  color: #807677;
+}
+
+.QuickLinks {
+  /* background-color: #f5f7f9; */
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  /* height: 180px; */
+  /* align-items: center; */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #807677;
+  justify-content: space-around;
+}
+.q {
+  margin-bottom: 25px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  color: #120809;
+}
+.a {
+  margin-top: -10px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 20%;
+  text-align: left;
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  color: #120809;
+}
+.contact div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height, or 169% */
+
+  color: #807677;
+}
+hr {
+  padding: 0 90px;
+  width: 87%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(243, 133, 48, 0.5);
+  border-radius: 1px;
+  height: 2px;
+  border: none;
+}
+.Social {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding-top: 20px;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  /* background-color: #d32d44; */
+
+  gap: 24px;
+}
+.Face {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  /* background-color: #3b5998; */
+}
+.socialBody {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.Twitter {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  /* background-color: #1da1f2; */
+}
+.Ig {
+  /* display: flex; */
+  width: 30px;
+  height: 30px;
+}
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    overflow-y: hidden;
+  }
   .FormBody {
     width: 100%;
+    padding: 0 10px 0 10px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .navBarItems {
+    width: 100%;
+  }
+  .About_Check {
+    gap: 5px;
+  }
+  .About {
+    width: 60px;
+    font-size: 10px;
+  }
+  .Check {
+    width: 70px;
+    font-size: 10px;
+  }
+  .Admin_btn {
+    text-align: center;
+    border: 1px solid #d32d44;
+    border-radius: 7px;
+    line-height: 2em;
+    width: 18%;
+    /* font-size: 12px; */
+    cursor: pointer;
+  }
+  .Image {
+    display: none;
+  }
+  .LoginBtn {
+    position: relative;
+    width: 100%;
+  }
+  .show-hide-icon {
+    left: 90%;
+    /* background-color: #d32d44; */
+  }
+  .SpecializedInfo {
+    width: 100%;
+    height: fit-content;
+
+    /* width: 45%; */
+    /* background-color: #efcc32; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    gap: 10px;
+  }
+  .a {
+    margin-top: -1px;
+  }
+  .QuickLinks {
+    /* background-color: #1a7adb; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #807677;
+    /* height: 50px; */
+  }
+  .q {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .QuickLinkDetails {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #807677;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  .contact div {
+    /* background-color: #00ff4c; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 10px;
+    /* text-align: justify; */
+    line-height: 9px;
+    /* padding-right: 15px; */
+  }
+  /* .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+  } */
+  .footer {
+    display: flex;
+    margin-bottom: auto;
+    /* background-color: #fd0909; */
+    height: 360px;
+    padding-top: 10px;
+    flex-direction: column;
+    /* align-items: center;s */
+  }
+  .footerBar {
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 0px 10px;
+    padding-bottom: 0px;
+    height: 270px;
+    margin-bottom: 12px;
+    flex-direction: column;
+    /* background-color: #d32d44; */
   }
 }

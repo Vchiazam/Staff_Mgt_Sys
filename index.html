@@ -32,8 +32,8 @@
           alt="Logo"
         />
         <div class="About_Check">
-          <span> About Us</span>
-          <span> Check Salary</span>
+          <span class="About"> About Us</span>
+          <span class="check"> Check Salary</span>
         </div>
         <div class="Admin_btn">Admin Login</div>
       </div>
@@ -52,7 +52,9 @@
             the end of the month,<br />
             by clicking on the button below.
           </p>
-          <div class="ResultBtn">Staff Login</div>
+          <a href="./AdminLoginForm/adminlogin.html">
+            <div class="ResultBtn">Staff Login</div>
+          </a>
         </div>
       </div>
       <!-- <img src="https://res.cloudinary.com/dgj2rhqd0/image/upload/v1685142627/SchMgt/download_1_wvaq56.png"  alt="mainArea"/> -->
@@ -86,13 +88,15 @@
           </p>
         </div>
         <div class="QuickLinks">
-          <h3 class="q">Quick Links</h3>
-          <p>About Us</p>
-          <p>Admin Login</p>
-          <p>Check Salary</p>
+          <div class="q">Quick Links</div>
+          <div class="QuickLinkDetails">
+            <p>About Us</p>
+            <p>Admin Login</p>
+            <p>Check Salary</p>
+          </div>
         </div>
         <div class="contact">
-          <h4>Contact</h4>
+          <h4 class="ConTact">Contact</h4>
           <div>
             <p>
               D66, BUA Estate,Ahmadu Bello Way, Kado District, FCT Abuja,
@@ -146,20 +150,22 @@
           <p class="details">Enter your details below to login</p>
           <input class="Username" type="text" placeholder="Enter Username" />
           <p class="Error">Username cant be empty</p>
-          <div>
-            <img
-              class="show_hide"
-              src="https://res.cloudinary.com/dgj2rhqd0/image/upload/v1685220407/SchMgt/show_fjgguu.png"
-            />
-            <img
-              class="show_hide1"
-              src="https://res.cloudinary.com/dgj2rhqd0/image/upload/v1685220400/SchMgt/hide_bbwyg6.png"
-            />
+          <div class="password-container">
             <input
               class="password"
               type="password"
-              placeholder="Enter password"
+              placeholder="Enter Password"
             />
+            <span class="show-hide-icon">
+              <img
+                class="show_hide"
+                src="https://res.cloudinary.com/dgj2rhqd0/image/upload/v1685220407/SchMgt/show_fjgguu.png"
+              />
+              <img
+                class="show_hide1"
+                src="https://res.cloudinary.com/dgj2rhqd0/image/upload/v1685220400/SchMgt/hide_bbwyg6.png"
+              />
+            </span>
           </div>
           <p class="Error" id="Error">Password cant be empty</p>
           <div class="BtnWrpper">

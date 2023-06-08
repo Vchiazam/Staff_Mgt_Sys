@@ -37,7 +37,8 @@ submitBtn.onclick = function (event) {
   else if (submitBtn.value !== null) return login();
 };
 function login() {
-  console.log("submited");
+  window.location.replace("../Staffdashboard/Staffdashboard.html");
+  // console.log("submited");
   //   const data = { name: button1.value, password: button2.value };
   //   fetch(url, {
   //     method: "POST",

@@ -36,31 +36,47 @@ body {
 }
 .About {
   display: flex;
-  line-height: 29px;
-  width: 100px;
+  font-family: "Mulish";
+  font-style: normal;
+  /* line-height: 29px; */
+  width: 120px;
+  font-weight: 400;
+  font-size: 12px;
   justify-content: center;
-  border-radius: 1px;
+  border-radius: 4px;
+  line-height: 35px;
+  cursor: pointer;
+}
+.About:hover {
+  background-color: #fff4f7;
 }
 .Check {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   /* line-height: 16px;  */
   color: #d32d44;
   display: flex;
-  line-height: 29px;
-  width: 100px;
+  line-height: 35px;
+  width: 120px;
   justify-content: center;
-  border-radius: 2px;
-
+  border-radius: 4px;
   background-color: #ffdbe6;
+  cursor: pointer;
 }
 .Admin_btn {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  /* line-height: 22px; */
+  /* identical to box height, or 157% */
+  color: #120809;
   text-align: center;
   border: 1px solid #d32d44;
   border-radius: 7px;
-  line-height: 2em;
+  line-height: 2.5em;
   width: 15%;
   cursor: pointer;
 }
@@ -94,6 +110,8 @@ body {
 }
 .WN {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 3px;
 }
 .Name {
@@ -211,19 +229,55 @@ strong {
   padding: 20px;
 }
 .RequestALoan {
+  display: flex;
+  flex-direction: column;
   background-color: #ffdbe6;
   width: 180px;
   height: 100%;
   border-radius: 10px;
 }
+.ellipse {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  /* align-items: flex-end; */
+  width: 30%;
+  height: 50px;
+  /* background-color: gold; */
+}
+.LoanIcon {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  /* align-items: center; */
+  gap: 5px;
+  justify-content: flex-start;
+  width: 100%;
+  height: 80px;
+  /* background-color: gold; */
+}
+.LoanIcon img {
+  width: 25px;
+  /* height: 100%; */
+}
+.LoanIcon p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #d32d44;
+}
 .SalaryTable {
   background-color: white;
   width: 100%;
-  height: 800px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   border-radius: 7px;
-  padding: 20px 30px 0px 30px;
+  padding: 20px 30px 100px 30px;
+  margin-bottom: 150px;
 }
 .SummaryTitle {
   /* padding: 30px; */
@@ -300,4 +354,146 @@ strong {
   font-feature-settings: "pnum" on, "lnum" on;
 
   color: #818181;
+}
+.footer {
+  display: flex;
+  background-color: #fff4f5;
+  height: 60vh;
+  padding-top: 10px;
+  flex-direction: column;
+  /* align-items: center;s */
+}
+.footerBar {
+  padding: 60px 90px;
+  /* margin-top: -20%; */
+  display: flex;
+  /* background-color: #2dd35f; */
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  align-items: flex-start;
+  padding-bottom: 0px;
+}
+.SpecializedInfo {
+  width: 400px;
+  height: 208px;
+  /* background-color: #efcc32; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 40px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+
+  color: #807677;
+}
+
+.QuickLinks {
+  /* background-color: #f5f7f9; */
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  /* height: 180px; */
+  /* align-items: center; */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #807677;
+  justify-content: space-around;
+}
+.q {
+  margin-bottom: 25px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  color: #120809;
+}
+.a {
+  margin-top: -10px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 20%;
+  text-align: left;
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  color: #120809;
+}
+.contact div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height, or 169% */
+
+  color: #807677;
+}
+hr {
+  padding: 0 90px;
+  width: 87%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(243, 133, 48, 0.5);
+  border-radius: 1px;
+  height: 2px;
+  border: none;
+}
+.Social {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding-top: 20px;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  /* background-color: #d32d44; */
+
+  gap: 24px;
+}
+.Face {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  /* background-color: #3b5998; */
+}
+.socialBody {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.Twitter {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  /* background-color: #1da1f2; */
+}
+.Ig {
+  /* display: flex; */
+  width: 30px;
+  height: 30px;
 }
