@@ -126,7 +126,6 @@ function login() {
   //       // else
   //       //     window.location = 'http://127.0.0.1:5503/login.html'
   //     })
-  document.body.style.overflowY = "hidden";
 
   //     .catch((err) => console.error(err));
 }
